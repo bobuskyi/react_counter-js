@@ -4,12 +4,13 @@ import './App.scss';
 export const App = () => {
   const [count, setCount] = useState(0);
 
-  const updateCount = amount => {
-    setCount(prevCount => prevCount + amount);
+  const addOne = () => {
+    setCount(prevCount => prevCount + 1);
   };
 
-  const addOne = () => updateCount(1);
-  const add100 = () => updateCount(100);
+  const add100 = () => {
+    setCount(prevCount => prevCount + 100);
+  };
 
   // DON'T change the code below
   const increase = () => {
